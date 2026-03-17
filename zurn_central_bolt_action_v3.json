@@ -2448,7 +2448,7 @@
 						"all": [{ "in": "Artillery Platoon" }, { "in": "United States" }]			
 					}
 				],
-				"points": 21,
+				"points": 0,
 				"models": 1,
 				"sortPriority": 1,
 				"limits": [
@@ -2460,7 +2460,7 @@
 				],
 				"options": [
 					{	"name": "Veterancy - Inexperienced",
-						"points": 0,
+						"points": 21,
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -2482,11 +2482,11 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Regular",
-						"points": 6,
+						"points": 30,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Veteran",
-						"points": 12,
+						"points": 39,
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -5684,7 +5684,7 @@
 				"specialText": "1 Bazooka Operator\n 1 Loader",
 				"equipment": ["Bazooka"]
 			},
-			{	"name": "Bazooka Anti-Tank Team",
+			{	"name": "Bazooka Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -5928,7 +5928,7 @@
 				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
 				"equipment": ["Anti-Tank Rifle Type 97"]
 			},
-			{	"name": "Japanese Anti-Tank Rifle Team",
+			{	"name": "Japanese Anti-Tank Rifle Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -6051,7 +6051,7 @@
 				"specialText": "1 Lunge Mine",
 				"equipment": []
 			},
-			{	"name": "Nikuhaku Suicide Anti-Tank Team",
+			{	"name": "Nikuhaku Suicide Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -6171,7 +6171,7 @@
 				"specialText": "1 Lunge Mine",
 				"equipment": []
 			},
-			{	"name": "Kirikomi Tai Suicide Anti-Tank Team",
+			{	"name": "Kirikomi Tai Suicide Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -6338,7 +6338,7 @@
 				"specialText": "1 NCO\n 1 Rifleman",
 				"equipment": []
 			},
-			{	"name": "Improvised Anti-Tank Team",
+			{	"name": "Improvised Anti-Tank Team - Heavy Weapon",
 				"factions": [],
 				"order": 1,
 				"availableIn": [
@@ -6702,7 +6702,7 @@
 				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
 				"equipment": ["Anti-Tank Rifle Team"]
 			},
-			{	"name": "Anti-Tank Rifle Team",
+			{	"name": "Anti-Tank Rifle Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -6987,7 +6987,7 @@
 				"specialText": "1 AT Rifle Operator\n 1 Weapon Assistant",
 				"equipment": ["Anti-Tank Rifle Team"]
 			},
-			{	"name": "AXIS SUPPORT - Anti-Tank Rifle Team",
+			{	"name": "AXIS SUPPORT - Anti-Tank Rifle Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7089,7 +7089,7 @@
 				"specialText": "1 Panzerschreck Operator\n 1 Loader",
 				"equipment": ["Panzerschreck"]
 			},
-			{	"name": "Bulgarian/Finnish/Hungarian Panzerschreck Anti-Tank Team",
+			{	"name": "Bulgarian/Finnish/Hungarian Panzerschreck Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7222,7 +7222,7 @@
 				"specialText": "1 Panzerschreck Operator\n 1 Loader",
 				"equipment": ["Panzerschreck"]
 			},
-			{	"name": "German/Romanian Panzerschreck Anti-Tank Team",
+			{	"name": "German/Romanian Panzerschreck Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7335,7 +7335,7 @@
 				"specialText": "1 LT Rifle Operator\n 1 Weapon Assistant",
 				"equipment": ["Blacker Bombard"]
 			},
-			{	"name": "Blacker Bombard Anti-Tank Team",
+			{	"name": "Blacker Bombard Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7413,7 +7413,7 @@
 				"specialText": "1 Operator\n 2 Weapon Assistants",
 				"equipment": ["Ampulomet"]
 			},
-			{	"name": "Ampulomet Anti-Tank Team",
+			{	"name": "Ampulomet Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7530,7 +7530,7 @@
 				"specialText": "1 NCO\n 1 Rifleman",
 				"equipment": ["Anti-Tank Grenades"]
 			},
-			{	"name": "Tank Hunters Anti-Tank Team",
+			{	"name": "Tank Hunters Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7661,7 +7661,7 @@
 				"specialText": "1 NCO\n 1 Rifleman",
 				"equipment": ["Dog Mines","Anti-Tank Grenades"]
 			},
-			{	"name": "Dog Mines Anti-Tank Team",
+			{	"name": "Dog Mines Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -7806,7 +7806,7 @@
 				"specialText": "1 PIAT Operator\n 1 Loader",
 				"equipment": ["PIAT"]
 			},
-			{	"name": "PIAT Anti-Tank Team",
+			{	"name": "PIAT Anti-Tank Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -8838,7 +8838,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "Light Mortar Team (2 men)",
+			{	"name": "Light Mortar Team (2 men) - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -8968,7 +8968,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "Light Mortar Team (3 men)",
+			{	"name": "Light Mortar Team (3 men) - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9024,7 +9024,7 @@
 				"specialText": "1 Mortar Operator\n 2 Weapon Assitants",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "Romanian Light Mortar Team",
+			{	"name": "Romanian Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9074,7 +9074,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "British Light Mortar Team",
+			{	"name": "British Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9193,7 +9193,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "German Light Mortar Team",
+			{	"name": "German Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9265,7 +9265,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "AXIS SUPPORT - German Light Mortar Team",
+			{	"name": "AXIS SUPPORT - German Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9316,7 +9316,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "AXIS SUPPORT - Italian Light Mortar Team",
+			{	"name": "AXIS SUPPORT - Italian Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
@@ -9361,7 +9361,7 @@
 				"specialText": "1 Mortar Operator\n 1 Weapon Assitant",
 				"equipment": ["Light Mortar"]
 			},
-			{	"name": "Japanese Light Mortar Team",
+			{	"name": "Japanese Light Mortar Team - Heavy Weapon",
 				"order": 1,
 				"factions": [],
 				"availableIn": [
