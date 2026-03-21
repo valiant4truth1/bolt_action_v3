@@ -788,9 +788,94 @@
 			},
 			{	"name": "Improved HE",
 				"specialRules": ["Improved HE"]
+			},
+			{	"name": "Lances",
+				"specialRules": ["Lances"]
+			},
+			{	"name": "Mace Thrower",
+				"specialRules": ["Fixed","Shaped Charge","HE 3in","Team Weapon","Anti-Tank Gun","Two-Rocket Salvo"],
+				"specialText": "36in range, 1 shot, PEN+7\n36in range, 1 shot, HE 3in"
+			},
+			{	"name": "Low Velocity Light AT Gun Team",
+				"specialRules": ["Fixed","HE 1in","Team Weapon","Anti-Tank Gun"],
+				"specialText": "48in range, 1 shot, PEN+3"
+			},
+			{	"name": "Skoda 37mm/70mm Hybrid Gun",
+				"specialRules": ["Fixed","HE 1in","HE 2in","Team Weapon","Anti-Tank Gun","Hybrid Gun"],
+				"specialText": "48in range, 1 shot, PEN+4\n48in range, 1 shot, HE 2in OR 30-60in range, 1 shot, HE 2in"
+			},
+			{	"name": "Crew Carried MMG",
+				"specialRules": ["360° Arc"],
+				"specialText": "36in range, 3 shots"
+			},
+			{	"name": "Crew Carried LMG",
+				"specialRules": ["360° Arc"],
+				"specialText": "36in range, 2 shots"
+			},
+			{	"name": "Additional Crew Carried LMG",
+				"specialRules": ["360° Arc"],
+				"specialText": "36in range, 2 shots"
+			},
+			{	"name": "Stabilizer Jacks",
+				"specialRules": ["Stationary Firing Platform"]
 			}
 		],
 		"keywords": [
+			{	"name": "Master of the Hunt",
+				"definition": "The Sissi are allowed to make an Advance move and if they do not shoot any weapons then the Sissi can turn their dice to an Ambush order; Bolt Action, April 2025 Get-You-By Finland PDF"
+			},
+			{	"name": "Field Medics",
+				"definition": "Kaukopartio units always act as though a medic was within 6in of the unit; Bolt Action, April 2025 Get-You-By Finland PDF",
+				"specialRules": "Medics"
+			},
+			{	"name": "Deep Strike Mission",
+				"definition": "When a Kaukopartio unit that is outflanking becomes available, it may enter the battle from anywhere along either the right/left table edge (depending on the chosen side) or any point along the enemy's own table edge; Bolt Action, April 2025 Get-You-By Finland PDF"
+			},
+			{	"name": "Improved Ballistics",
+				"definition": "Against targets within half of its range, adds +1 to its penetration value; Armies of the Soviet Union, 3rd Edition: Pg. 58"
+			},
+			{	"name": "Slow... Pitifully Slow",
+				"definition": "Any vehicle with the Slow special rule has a basic move rate of 6in when Advancing and at a Run. It can still be given a Run order (thereby avoiding the 'One Man Turret' rule) but moves at its basic speed only; Bolt Action, April 2025 Get-You-By Belgium PDF"
+			},
+			{	"name": "Mobile Reserve",
+				"definition": "Cavalry with this special rule may not move into contact with an enemy unit while mounted and do not suffer the -1 to their leadership roll to arrive from reserve; Bolt Action, February 2026 Get-You-By Bulgaria PDF"
+			},
+			{	"name": "Hybrid Gun",
+				"definition": "When ordering the gun to Advance, as well as repositioning it, the barrel of the gun can be changed, turning it from a light anti-tank gun into a light howitzer (or vice versa). Declare what barrel the gun starts the game with when you deploy it; Bolt Action, February 2026 Get-You-By Bulgaria PDF"
+			},
+			{	"name": "Two-Rocket Salvo",
+				"definition": "This weapon has two munition types. Declare which profile you are using before firing. You must load two rockets of the same type, so the next shot taken on the subsequent turn will need to use the same profile. Then, when both rockets have been fired, you can start the process again; Bolt Action, February 2026 Get-You-By Hungary PDF"
+			},
+			{	"name": "Small Carriage",
+				"definition": "This weapon is too small to tow behind a vehicle. The crew and weapon are instead counted as infantry being transported, taking up 6 transport slots inside a vehicle. The crew may move the weapon up to 6in when given a Run order, even over rough ground; Bolt Action, February 2026 Get-You-By Hungary PDF"
+			},
+			{	"name": "One, Not Both!",
+				"definition": "This crew may either shoot the main gun or the crew-carried machine gun - but not both; Bolt Action, February 2026 Get-You-By Hungary PDF"
+			},
+			{	"name": "Non Testati",
+				"definition": "Immediately before the opponent rolls to hit when shooting or for casualties in close combat versus a Camicie Nere section, the controlling player rolls a D6. On a result of 1-2, the section loses its will to fight and gains the Shirkers special rule. On a 3-4, the section remains the same. On a 5-6, the section gains the Fanatics special rule. Apply the ability before resolving the shooting or close combat. The result rolled then applies for the rest of the game; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
+			{	"name": "Too Many Turrets!",
+				"definition": "It is always necessary to make an order test when issuing an Advance order, even if the vehicle is not pinned; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
+			{	"name": "Stubborn As A Mule",
+				"definition": "When taking an order test and any doubles are rolled, the mules become stubborn and refuse to cooperate, even if the order test was passed. Place the order die to Down and add 1 pin marker to the team. This rule does not apply if a Fubar is rolled; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
+			{	"name": "Gun Assembly",
+				"definition": "To simulate the fact that the gun was actually transported disassembled, when the gun is unlimbered the artillery unit receives a pin marker. When the gun is limbered, the mule team (and consequently the 'transported' artillery unit) receives a pin marker; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
+			{	"name": "Poor Maintenance",
+				"definition": "When rolling to determine whether the flamethrower runs out of fuel, you suffer a -1 modifier to the roll; Bolt Action, February 2026 Get-You-By Partisans PDF"
+			},
+			{	"name": "Lances",
+				"definition": "Units equipped with lances gain one additional attack in close quarters against infantry and artillery units, but may not fire their carbines while mounted. Lances are discarded if the unit dismounts; Bolt Action, April 2025 Get-You-By Poland PDF"
+			},
+			{	"name": "Too Many Jobs!",
+				"definition": "It is always necessary to make an order test when issuing an Advance order, even if the vehicle is not pinned. In addition, the vehicle may fire either the main gun or the turret-mounted medium machine gun in the same turn, but not both; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
+			{	"name": "Severely Outdated",
+				"definition": "Antiquated Dutch artillery is not precise enough to fire accurate artillery bombardments, and thus always needs a 6 to hit their target unit when firing indirect fire, even if firing on the same unit in subsequent turns; Bolt Action, April 2025 Get-You-By Italy PDF"
+			},
 			{	"name": "Battle Flag",
 				"definition": "Any infantry or artillery unit within 12in and line of sight to a Battle Flag adds +1 to its morale value. Only one Battle Flag may be included in a force. In addition, if you roll a 1 on the Air Strike table, the enemy cannot target a unit that is within 12in of a flag. A Battle Flag cannot be given to a unit's leader (e.g. NCOs, officers, etc.), or to a model with a Signaling Bugle; Armies of Imperial Japan, 3rd Edition: Pg. 25"
 			},
@@ -3208,6 +3293,141 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 Officer",
+				"equipment": []
+			},
+			{	"name": "37mm Mle 1916 Low Velocity Light Anti-Tank Gun",
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
+					}
+				],
+				"points": 25,
+				"models": 3,
+				"sortPriority": 4,
+				"limits": [
+					{
+						"key": "Gun Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{	"name": "Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Veterancy - Regular",
+						"points": 15,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Veterancy - Veteran",
+						"points": 30,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"keywords": ["Period: E|M|L"],
+				"earlyWar": true,
+				"midWar": true,
+				"lateWar": true,
+				"specialText": "3 Crew Members",
+				"equipment": ["Low Velocity Light AT Gun Team","Gun Shield"]
+			},
+			{	"name": "Partisan Flamethrower Team",
+				"order": 1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Partisans" }]			
+					}
+				],
+				"points": 32,
+				"models": 2,
+				"sortPriority": 7,
+				"limits": [
+					{
+						"key": "Flamethrower",
+						"limit": 3,
+						"increment": true,
+						"max": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{	"name": "Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Veterancy - Regular",
+						"points": 8,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"keywords": ["Period: E|M|L","Poor Maintenance"],
+				"earlyWar": true,
+				"midWar": true,
+				"lateWar": true,
+				"specialText": "1 Flamethrower Operator\n 1 Weapon Assitant",
+				"equipment": ["Flamethrower - Team Weapon"]
+			},
+			{	"name": "Indonesian Infantry Section",
+				"order": 1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Netherlands" }]			
+					},
+					{
+						"all": [{ "in": "Recce Platoon" }, { "in": "Netherlands" }]			
+					}
+				],
+				"points": 35,
+				"models": 5,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					}
+				],
+				"options": [
+					{	"name": "Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Additional Unarmed Men",
+						"points": 5,
+						"increment": true,
+						"max": 6,
+						"addsModels": 1
+					},
+					{	"name": "Pistols",
+						"points": 1,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 6
+					},
+					{	"name": "LMG",
+						"points": 15,
+						"increment": true,
+						"max": "parentModels",
+						"maxKey": "gun",
+						"localLimit": 1
+					},
+					{	"name": "Shirkers",
+						"points": -2,
+						"perModel": true,
+						"specialRules": ["Shirkers"]
+					}
+				],
+				"keywords": ["Period: E|M|L"],
+				"earlyWar": true,
+				"midWar": true,
+				"lateWar": true,
+				"specialText": "1 NCO\n 4 Riflemen",
 				"equipment": []
 			},
 			{	"name": "Kempeitai Political Officer",
