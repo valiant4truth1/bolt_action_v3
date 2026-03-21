@@ -35,21 +35,6 @@
 			"default": true
 		},
 		{
-			"property": "earlyWar",
-			"label": "Include Early War Units",
-			"default": true
-		},
-		{
-			"property": "midWar",
-			"label": "Include Mid War Units",
-			"default": true
-		},
-		{
-			"property": "lateWar",
-			"label": "Include Late War Units",
-			"default": true
-		},
-		{
 			"property": "dv6",
 			"label": "Include Vehicles of DV 6",
 			"default": true
@@ -339,14 +324,8 @@
 				"specialRules": ["Assault","Tough Fighters"],
 				"specialText": "18in range, 2 shots/man"
 			},
-			{	"name": "Anti-Tank Grenades for Airborne",
-				"specialRules": ["Tank Hunters"]
-			},
 			{	"name": "Welbikes",
 				"specialRules": ["Bicycles"]
-			},
-			{	"name": "Anti-Tank Grenades for Commandos",
-				"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent","Tank Hunters"]
 			},
 			{	"name": "Battle Flag",
 				"specialRules": ["Battle Flag"]
@@ -1836,6 +1815,7 @@
 						"increment": true,
 						"max": 2,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -1856,6 +1836,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Germany",
 							"United States",
@@ -2183,6 +2164,7 @@
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Airborne)"
 					},
 					{	"name": "Welbikes",
@@ -2203,6 +2185,7 @@
 						"points": 3,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent"],
 						"unlockedByLocal": ["Veterancy - Veteran"],
 						"chooseOneKey": "natRuGB"
 					},
@@ -2210,14 +2193,14 @@
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
-						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "For King and Country! (Commandos) w/ SAS",
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
-						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent", "Who Dares Wins!"],
+						"specialRules": ["Who Dares Wins!"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "Additional Commandos",
@@ -2835,6 +2818,7 @@
 						"increment": true,
 						"max": 2,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -2855,6 +2839,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Germany",
 							"United States",
@@ -3181,6 +3166,7 @@
 						"points": 3,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent"],
 						"unlockedByLocal": ["Veterancy - Veteran"],
 						"chooseOneKey": "natRuGB"
 					},
@@ -3188,19 +3174,21 @@
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
-						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent", "Who Dares Wins!"],
+						"specialRules": ["Who Dares Wins!"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "Anti-Tank Grenades for Airborne",
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Airborne)"
 					},
 					{	"name": "Anti-Tank Grenades for Commandos",
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "Additional Commandos",
@@ -3486,6 +3474,7 @@
 						"points": 7,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "Rifles",
@@ -3575,6 +3564,7 @@
 						"points": 9,
 						"increment": true,
 						"max": 4,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -3800,6 +3790,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -3822,6 +3813,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 4,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Japan"
 						],
@@ -3925,6 +3917,7 @@
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Airborne)"
 					},
 					{	"name": "Welbikes",
@@ -3945,6 +3938,7 @@
 						"points": 3,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
+						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent"],
 						"unlockedByLocal": ["Veterancy - Veteran"],
 						"chooseOneKey": "natRuGB"
 					},
@@ -3952,14 +3946,14 @@
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
-						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent"],
+						"equipment": ["Anti-Tank Grenades"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "For King and Country! (Commandos) w/ SAS",
 						"points": 2,
 						"perModel": true,
 						"availableIn": ["Great Britain"],
-						"specialRules": ["Behind Enemy Lines", "Tough Fighters", "Independent", "Who Dares Wins!"],
+						"specialRules": ["Who Dares Wins!"],
 						"unlockedByLocal": "For King and Country! (Commandos)"
 					},
 					{	"name": "By Air, Land, and Sea (Marines, non-Veteran)",
@@ -4194,6 +4188,7 @@
 						"increment": true,
 						"max": 2,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
@@ -4217,6 +4212,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Great Britain"
 						]
@@ -4594,6 +4590,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -4783,6 +4780,7 @@
 						"increment": true,
 						"max": 2,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"France",
 							"Italy",
@@ -4799,6 +4797,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Great Britain"
 						]
@@ -5109,6 +5108,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -5225,6 +5225,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -5355,6 +5356,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "CO SMG and Shin Gunto",
@@ -5484,6 +5486,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -5523,9 +5526,6 @@
 					},
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "Bulgaria" }]			
-					},
-					{
-						"all": [{ "in": "Rifle Platoon" }, { "in": "Finland" }]			
 					},
 					{
 						"all": [{ "in": "Rifle Platoon" }, { "in": "France" }]			
@@ -5611,7 +5611,6 @@
 						"availableIn": [
 							"Belgium",
 							"Bulgaria",
-							"Finland",
 							"France",
 							"Greece",
 							"Hungary",
@@ -5629,10 +5628,7 @@
 					},
 					{	"name": "Skis",
 						"points": 0,
-						"availableIn": [
-							"Finland",
-							"Norway"
-						]
+						"availableIn": ["Norway"]
 					},
 					{	"name": "Defend the Fatherland! (Waffen-SS)",
 						"points": 2,
@@ -5761,6 +5757,41 @@
 				"lateWar": true,
 				"specialText": "1 Sniper, 1 Spotter",
 				"equipment": ["Rifles","Pistols"]
+			},
+			{	"name": "Finnish Sniper Team",
+				"order": 1,
+				"factions": [],
+				"availableIn": [
+					{
+						"all": [{ "in": "Rifle Platoon" }, { "in": "Finland" }]			
+					}
+				],
+				"points": 52,
+				"models": 2,
+				"sortPriority": 2,
+				"limits": [
+					{
+						"key": "Sniper",
+						"limit": 1,
+						"perParent": true
+					}
+				],
+				"options": [
+					{	"name": "Veterancy - Regular",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Veterancy - Veteran",
+						"points": 15,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"keywords": ["Period: E|M|L","Team Weapon","Sniper","Infiltrator","Master of the Hunt"],
+				"earlyWar": true,
+				"midWar": true,
+				"lateWar": true,
+				"specialText": "1 Sniper, 1 Spotter",
+				"equipment": ["Rifles","Pistols","Skis"]
 			},
 			{	"name": "Japanese Sniper Team",
 				"order": 1,
@@ -6702,6 +6733,7 @@
 						"points": 10,
 						"increment": true,
 						"max": 3,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "Yamato Damashii (SNLF, non-Veteran)",
@@ -6787,6 +6819,7 @@
 						"points": 10,
 						"increment": true,
 						"max": 3,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "Yamato Damashii (SNLF, non-Veteran)",
@@ -7903,6 +7936,7 @@
 						"points": 7,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -7980,6 +8014,7 @@
 						"points": 7,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -8060,6 +8095,7 @@
 						"points": 13,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -8113,6 +8149,7 @@
 						"points": 13,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -8375,6 +8412,7 @@
 						"increment": true,
 						"max": 2,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": ["Japan"]
 					},
 					{	"name": "SMGs",
@@ -10438,9 +10476,6 @@
 						"points": 9,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
-					{	"name": "Skis",
-						"points": 0
-					},
 					{	"name": "Add Spotter",
 						"points": 10,
 						"increment": true,
@@ -10454,7 +10489,7 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 Mortar Operator\n 3 Weapon Assitants",
-				"equipment": ["Heavy Mortar"]
+				"equipment": ["Heavy Mortar","Skis"]
 			},
 			{	"name": "Heavy Mortar Team",
 				"order": 1,
@@ -11202,6 +11237,7 @@
 						"points": 7,
 						"increment": true,
 						"max": 2,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -11280,6 +11316,7 @@
 						"points": 14,
 						"increment": true,
 						"max": 6,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "Additional Pistol Man",
@@ -11347,6 +11384,7 @@
 						"points": 13,
 						"increment": true,
 						"max": 7,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -11424,6 +11462,7 @@
 						"points": 13,
 						"increment": true,
 						"max": 7,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMGs",
@@ -11506,6 +11545,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 4,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMG",
@@ -11549,9 +11589,6 @@
 						"maxKey": "gun",
 						"localLimit": 2
 					},
-					{	"name": "Skis",
-						"points": 0
-					},
 					{	"name": "Anti-Tank Grenades",
 						"points": 2,
 						"perModel": true
@@ -11566,7 +11603,7 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 NCO\n4 Riflemen",
-				"equipment": []
+				"equipment": ["Skis","Rifle"]
 			},
 			{	"name": "Bulgarian/Hungarian Engineer Infantry Section",
 				"order": 1,
@@ -11613,6 +11650,7 @@
 						"increment": true,
 						"max": 8,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Hungary"
 						]
@@ -11622,6 +11660,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Bulgaria"
 						]
@@ -11673,6 +11712,7 @@
 						"availableIn": [
 							"Bulgaria"
 						],
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Paratroopers/Gendarmerie",
@@ -11776,6 +11816,7 @@
 						"increment": true,
 						"max": 6,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"France",
 							"Greece",
@@ -11799,6 +11840,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium"
 						]
@@ -11809,7 +11851,6 @@
 						"maxKey": "gun",
 						"availableIn": [
 							"Belgium",
-							"Finland",
 							"France",
 							"Italy"
 						],
@@ -11887,6 +11928,7 @@
 						"availableIn": [
 							"Italy"
 						],
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Green",
@@ -11894,6 +11936,7 @@
 						"availableIn": [
 							"Italy"
 						],
+						"specialRules": ["Green"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Skis",
@@ -12072,6 +12115,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 13,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "BAR",
@@ -12120,6 +12164,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 9,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -12200,6 +12245,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 6,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -12232,10 +12278,12 @@
 					{	"name": "Shirkers",
 						"points": -2,
 						"perModel": true,
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Green",
 						"points": 0,
+						"specialRules": ["Green"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Anti-Tank Grenades",
@@ -12286,6 +12334,7 @@
 						"points": 8,
 						"increment": true,
 						"max": 7,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -12429,6 +12478,7 @@
 						"points": 11,
 						"increment": true,
 						"max": 7,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -12527,6 +12577,7 @@
 						"points": 10,
 						"increment": true,
 						"max": 4,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "SMG",
@@ -12562,9 +12613,6 @@
 						"maxKey": "gun",
 						"localLimit": 2
 					},
-					{	"name": "Skis",
-						"points": 0
-					},
 					{	"name": "Anti-Tank Grenades",
 						"points": 2,
 						"perModel": true
@@ -12579,7 +12627,7 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 NCO\n4 Riflemen",
-				"equipment": []
+				"equipment": ["Skis","Rifle"]
 			},
 			{	"name": "Buglarian/Hungarian Infantry Section",
 				"order": 1,
@@ -12631,6 +12679,7 @@
 						"increment": true,
 						"max": 8,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Hungary"
 						]
@@ -12640,6 +12689,7 @@
 						"increment": true,
 						"max": 6,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Bulgaria"
 						]
@@ -12680,6 +12730,7 @@
 						"availableIn": [
 							"Bulgaria"
 						],
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"]
 					},
 					{	"name": "Paratroopers/Gendarmerie",
@@ -12787,6 +12838,7 @@
 						"increment": true,
 						"max": 6,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"France",
 							"Greece",
@@ -12810,6 +12862,7 @@
 						"increment": true,
 						"max": 5,
 						"addsModels": 1,
+						"equipment": ["Rifle"],
 						"availableIn": [
 							"Belgium"
 						]
@@ -12895,6 +12948,7 @@
 						"availableIn": [
 							"Italy"
 						],
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"],
 						"chooseOneKey": "inexp_type"
 					},
@@ -12903,6 +12957,7 @@
 						"availableIn": [
 							"Italy"
 						],
+						"specialRules": ["Green"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"],
 						"chooseOneKey": "inexp_type"
 					},
@@ -12974,6 +13029,11 @@
 				"limits": [
 					{
 						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "Grenadier",
 						"limit": 1,
 						"perParent": true
 					}
@@ -12987,6 +13047,7 @@
 						"points": 10,
 						"increment": true,
 						"max": 5,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -13063,6 +13124,7 @@
 						"points": 7,
 						"increment": true,
 						"max": 15,
+						"equipment": ["Rifle"],
 						"addsModels": 1
 					},
 					{	"name": "NCO SMG",
@@ -13329,11 +13391,13 @@
 					{	"name": "Shirkers",
 						"points": -2,
 						"perModel": true,
+						"specialRules": ["Shirkers"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"],
 						"chooseOneKey": "inexp_type"
 					},
 					{	"name": "Green",
 						"points": 0,
+						"specialRules": ["Green"],
 						"unlockedByLocal": ["Veterancy - Inexperienced"],
 						"chooseOneKey": "inexp_type"
 					},
@@ -13799,9 +13863,6 @@
 						"maxKey": "gun",
 						"localLimit": 2
 					},
-					{	"name": "Skis",
-						"points": 0
-					},
 					{	"name": "Anti-Tank Grenades",
 						"points": 2,
 						"perModel": true
@@ -13825,7 +13886,7 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 NCO\n4 Riflemen",
-				"equipment": []
+				"equipment": ["Skis","Rifle"]
 			},
 			{	"name": "Kaukopartio Long Distance Recon Squad",
 				"order": 1,
@@ -13877,9 +13938,6 @@
 						"max": "parentModels",
 						"maxKey": "gun",
 						"requireChooseOneKey": "coWeapon"
-					},
-					{	"name": "Skis",
-						"points": 0
 					}
 				],
 				"keywords": ["Period: E|M|L","Tank Hunters","Fanatics","Medics","Deep Strike Mission"],
@@ -13887,7 +13945,7 @@
 				"midWar": true,
 				"lateWar": true,
 				"specialText": "1 NCO\n4 Riflemen",
-				"equipment": ["SMG","Anti-Tank Grenades"]
+				"equipment": ["SMG","Anti-Tank Grenades","Skis"]
 			},
 			{	"name": "Cavalry Troop",
 				"order": 1,
@@ -18649,7 +18707,8 @@
 					{
 						"name": "Shirkers",
 						"points": -2,
-						"perModel": true
+						"perModel": true,
+						"specialRules": ["Shirkers"]
 					}
 				],
 				"keywords": ["Period: E|M|L"],
@@ -18807,7 +18866,8 @@
 					{
 						"name": "Shirkers",
 						"points": -2,
-						"perModel": true
+						"perModel": true,
+						"specialRules": ["Shirkers"]
 					}
 				],
 				"keywords": ["Period: E|M|L"],
@@ -21864,6 +21924,11 @@
 				"limits": [
 					{
 						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "Columnists",
 						"limit": 2,
 						"perParent": true
 					}
@@ -33064,23 +33129,23 @@
 				"options": [
 					{	"name": "Veterancy - Inexperienced",
 						"points": 0,
-				"availableIn": [
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Bulgaria" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Hungary" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Partisans" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Poland" }]			
-					}
-				],
+						"availableIn": [
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Bulgaria" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Hungary" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Partisans" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Poland" }]			
+							}
+						],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Regular",
@@ -33089,26 +33154,21 @@
 					},
 					{	"name": "Veterancy - Veteran",
 						"points": 30,
-				"availableIn": [
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Bulgaria" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Hungary" }]			
-					},
-					{
-						"all": [{ "in": "Artillery Platoon" }, { "in": "Poland" }]			
-					}
-				],
+						"availableIn": [
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Bulgaria" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "France" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Hungary" }]			
+							},
+							{
+								"all": [{ "in": "Artillery Platoon" }, { "in": "Poland" }]			
+							}
+						],
 						"requireChooseOneKey": "NCOVeterancy"
-					},
-					{
-						"name": "37mm Mle 1916 Low Velocity Light AT Gun",
-						"points": -10,
-						"availableIn": ["France"]
 					},
 					{
 						"name": "Skoda 37mm/70mm Hybrid Gun",
@@ -48952,7 +49012,19 @@
 				"order": 1,
 				"availableIn": [
 					{
-						"all": [{ "in": "Armored Platoon"	}, { "in": "Finland" }]			
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Finland" }]			
+					},
+					{
+						"all": [{ "in": "Rifle Platoon"	}, { "in": "Finland" }]			
+					},
+					{
+						"all": [{ "in": "Engineer Platoon"	}, { "in": "Finland" }]			
+					},
+					{
+						"all": [{ "in": "Artillery Platoon"	}, { "in": "Finland" }]			
+					},
+					{
+						"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Finland" }]			
 					}
 				],
 				"points": 40,
