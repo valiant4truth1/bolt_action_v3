@@ -65844,6 +65844,11 @@
 				"limits": [
 					{
 						"key": "Rifle Team",
+						"limit": 4,
+						"perParent": true
+					},
+					{
+						"key": "InfilScouts",
 						"limit": 1,
 						"perParent": true
 					}
