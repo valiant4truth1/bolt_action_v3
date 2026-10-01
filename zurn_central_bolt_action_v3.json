@@ -370,7 +370,7 @@
 			{	"name": "Japan",
 				"additionalRules": [
 					"Death Before Dishonor - All Imperial Japanese infantry and artillery units have the Fanatics special rule. In addition, they automatically pass morale checks for being assaulted by enemy tanks (note that artillery pieces are still destroyed as normal).",
-					"Banzai! - A Japanese Officer may be given a special 'Banzai!' order. THis counts as a 'You Men Snap to Action' with the following exceptions: If the order is given successfully, assign the officer a Run order die. THen ALL infantry units within 6in that haven't already received an order that turn are issued a Run order. NOte that this includes infantry units with the Fixed special rule, like many weapon teams. All affected units, including the initiating officer, must then attempt to engage the closest visible enemy unit in close quarters. Note that, other than for the initiating officer, no order test is required for any units affected by a 'Banzai!' order. This means that affected units execute their Run orders automatically, without any dice rolled, and as such retain any pin markers they have.",
+					"Banzai! - A Japanese Officer may be given a special 'Banzai!' order. This counts as a 'You Men Snap to Action' with the following exceptions: If the order is given successfully, assign the officer a Run order die. THen ALL infantry units within 6in that haven't already received an order that turn are issued a Run order. Note that this includes infantry units which cannot normally assault enemies, such as those with the Fixed special rule, or the Self-defence special rule. All infantry units can and will assault into close quarters if given the opportunity. All affected units, including the initiating officer, must then attempt to engage the closest visible enemy unit in close quarters. Note that, other than for the initiating officer, no order test is required for any units affected by a 'Banzai!' order. This means that affected units execute their Run orders automatically, without any dice rolled, and as such retain any pin markers they have.",
 					"Lack of Radios - When you give the Command Vehicle special rule to a vehicle that does not have it in its entry for the purposes of choosing a command vehicle for an Armoured Platoon, you can give it the rule for free instead of paying the normal +10pts. If you do so, the vehicle reduces its Command Vehicle rule from 12in to 6in. This represents communication by means of flags or hand signals."
 				],
 				"specialRules": ["Fanatics"]
@@ -434,7 +434,7 @@
 				"additionalRules": [
 					"Air Superiority - Forward Air Observers can call in an Additional Air Strike per Game; Bolt Action, 3rd Edition United States Army Book: Pg. 24",
 					"By Air, Land, and Sea - Select Units gain the ability to be Airborne, Marines, or Rangers; Bolt Action, 3rd Edition United States Army Book: Pg. 25",
-					"Fire and Manuever - For every three models in a unit with a rifle/carbine equipped, add an Additional die when that unit shoots; Bolt Action, 3rd Edition United States Army Book: Pg. 24",
+					"Fire and Manuever - For every three men who fire a rifle/carbine when a unit shoots, you may add one additional dice to the total shots fired (these shots are assumed to come from any of the men armed as such); Bolt Action, 3rd Edition United States Army Book: Pg. 24",
 					"Modern Communications - This unit does not apply the -1 penalty when coming out of Reserves; Bolt Action, 3rd Edition United States Army Book: Pg. 25"
 				]
 			}
@@ -966,6 +966,9 @@
 			},
 			{	"name": "Turret Mounted HMG w/ Rear-facing MMG",
 				"equipment": ["Turret Mounted HMG","Turret Mounted Rear Facing MMG"]
+			},
+			{	"name": "Turret Mounted HMG w/ Linked MMG",
+				"equipment": ["Turret Mounted HMG","Turret Mounted MMG"]
 			},
 			{	"name": "Turret Mounted Low Velocity Light AT Gun w/ Coaxial MMG",
 				"equipment": ["Turret Mounted Low Velocity Light AT Gun","Turret Mounted Coaxial MMG"]
@@ -2524,6 +2527,12 @@
 			}
 		],
 		"keywords": [
+			{	"name": "LZ Signals",
+				"definition": "If at least one unit of Pathfinders is not in reserve (i.e. is not deployed or in first wave), then any friendly Airborne unit in reserve may fe-roll failed order tests to come onto the table from reserve. This includes US Paratrooper Squads, Pathfinders Squads, Glider Squads and Glider Machine Gun Squads, any unit upgraded to Airborne, and Airborne Armoured Jeeps; Bolt Action, Armies of the United States: Pg. 36"
+			},
+			{	"name": "Auxiliary",
+				"definition": "This vehicle cannot be given the Command Vehicle special rule and therefore cannot be the command vehicle of an Armored Platoon; Bolt Action, Errata to the Armies of Germany: Pg. 2"
+			},
 			{	"name": "Jungle Fighters",
 				"definition": "The unit has the Infiltrators special rule. In addition, if set up using the Infiltrators rules, they may begin the game Hidden and on Ambush; Bolt Action, 3rd Edition Commonwealth Army Book: Pg. 17",
 				"specialRules": ["Infiltrator"]
@@ -2962,7 +2971,7 @@
 				"definition": "Still counts as a heavy mortar, but fires HE 4in rockets. To represent the fact that it is so slow to reload, after it has fired, it must then be given a successful Rally order before it can be ordered to Fire again; Armies of the Soviet Union, 3rd Edition: Pg. 54"
 			},
 			{	"name": "One Shot",
-				"definition": "Can be fired once per game. One shot Weapons can Split Fire; Bolt Action, 3rd Edition: Pg. 97"
+				"definition": "Can be fired once per game. One shot Weapons can Split Fire. Once fired, replace the model with another model armed in the same way but that no longer carries the disposable weapon; Bolt Action, 3rd Edition: Pg. 97"
 			},
 			{	"name": "Shaped Charge",
 				"definition": "No -1 Pen for Long Range. No +1 Pen for Point-Blank; Bolt Action, 3rd Edition: Pg. 103"
@@ -3028,7 +3037,7 @@
 				"specialRules": ["Sniper"]
 			},
 			{	"name": "Spotters",
-				"definition": "Cannot be placed within coherency of the weapon crew. Either the weapon crew or the spotter can be given an order - but not both. Spotters can never assault or fire any weapon against enemy units. Spotters without an order die next to it count as Down. Spotters have the Infiltrator special rule. Spotters/observers can only spot for a single Indirect Fire weapon per game turn. If the firing unit switches to a different spotter it resets the ranging-in process. Cannot spot for inexperienced indirect fire weapons. When the associated weapon unit is destroyed, the spotter is removed also. Spotters are always ignored for the purpose of victory conditions. If the spotter is destroyed, the weapons team or artillery unit is not affected (other than that it has no spotter). If already ranged in when the spotter is destroyed, the weapon team can continue firing at 2+; Bolt Action, 3rd Edition: Pg. 102"
+				"definition": "Cannot be placed within coherency of the weapon crew. Either the weapon crew or the spotter can be given an order - but not both. Spotters can never assault or fire any weapon against enemy units. When spotters move, they follow the rules for infantry units, and they do not have the Fixed special rule. Spotters without an order die next to it count as Down. Spotters have the Infiltrator special rule. Spotters/observers can only spot for a single Indirect Fire weapon per game turn. If the firing unit switches to a different spotter it resets the ranging-in process. Cannot spot for inexperienced indirect fire weapons. When the associated weapon unit is destroyed, the spotter is removed also. Spotters are always ignored for the purpose of victory conditions. If the spotter is destroyed, the weapons team or artillery unit is not affected (other than that it has no spotter). If already ranged in when the spotter is destroyed, the weapon team can continue firing at 2+; Bolt Action, 3rd Edition: Pg. 102"
 			},
 			{	"name": "Stubborn",
 				"definition": "If forced to take a morale check, they ignore negative morale modifiers from pin markers. Remember that order tests are not morale checks, and are therefore modified as normal; Bolt Action, 3rd Edition: Pg. 122"
@@ -13004,6 +13013,12 @@
 						"unlockedByLocal": ["Veterancy - Veteran"],
 						"chooseOneKey": "natRuSU"
 					},
+					{	"name": "Hammer and Sickle (Naval Brigade)",
+						"points": 1,
+						"perModel": true,
+						"availableIn": ["Soviet Union"],
+						"chooseOneKey": "natRuSU"
+					},
 					{	"name": "By Air, Land, and Sea (Marines, non-Veteran)",
 						"points": 0,
 						"availableIn": ["United States"],
@@ -13310,7 +13325,7 @@
 				"availableIn": [
 					{"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Japan" }]}
 				],
-				"points": 35,
+				"points": 32,
 				"models": 3,
 				"sortPriority": 5,
 				"limits": [
@@ -13331,11 +13346,11 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Regular",
-						"points": 15,
+						"points": 13,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Veteran",
-						"points": 30,
+						"points": 27,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Additional Unarmed Men",
@@ -13650,7 +13665,7 @@
 				"availableIn": [
 					{"all": [{ "in": "Heavy Weapons Platoon" }, { "in": "Japan" }]}
 				],
-				"points": 46,
+				"points": 42,
 				"models": 4,
 				"sortPriority": 5,
 				"limits": [
@@ -13671,11 +13686,11 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Regular",
-						"points": 19,
+						"points": 18,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Veterancy - Veteran",
-						"points": 38,
+						"points": 36,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Additional Unarmed Men",
@@ -19725,6 +19740,13 @@
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 5,
+						"unlockedByLocal": ["Ayo Gurkhali!"],
+						"availableIn": ["India"]
 					}
 				],
 				"keywords": ["Period: M|L","Stubborn"],
@@ -19808,6 +19830,13 @@
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 5,
+						"unlockedByLocal": ["Ayo Gurkhali!"],
+						"availableIn": ["India"]
 					}
 				],
 				"keywords": ["Period: M|L","Stubborn","LZ Signals"],
@@ -19886,6 +19915,13 @@
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Ayo Gurkhali!"],
+						"availableIn": ["India"]
 					}
 				],
 				"keywords": ["Period: M|L"],
@@ -19943,10 +19979,17 @@
 						"chooseOneKey": "natRuIN"
 					},
 					{	"name": "Ayo Gurkhali!",
-						"points": 4,
+						"points": 3,
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 2,
+						"unlockedByLocal": ["Ayo Gurkhali!"],
+						"availableIn": ["India"]
 					}
 				],
 				"keywords": ["Period: M|L","Ambush","Behind Enemy Lines","Fieldcraft"],
@@ -19996,7 +20039,7 @@
 						"chooseOneKey": "natRuIN"
 					},
 					{	"name": "Ayo Gurkhali!",
-						"points": 4,
+						"points": 3,
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
@@ -20076,7 +20119,7 @@
 						"chooseOneKey": "natRuIN"
 					},
 					{	"name": "Ayo Gurkhali!",
-						"points": 4,
+						"points": 3,
 						"perModel": true,
 						"availableIn": ["India"],
 						"chooseOneKey": "natRuIN"
@@ -21020,7 +21063,35 @@
 					{	"name": "Fieldcraft",
 						"points": 1,
 						"perModel": true,
-						"availableIn": ["India"]
+						"availableIn": ["India"],
+						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Ayo Gurkhali!",
+						"points": 4,
+						"perModel": true,
+						"availableIn": ["India"],
+						"chooseOneKey": "natRuIN"
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Ayo Gurkhali!","Maori"],
+						"availableIn": ["India","New Zealand"]
+					},
+					{	"name": "Discounted Shotguns",
+						"points": -1,
+						"increment": true,
+						"max": 5,
+						"unlockedByLocal": ["Ayo Gurkhali!","Maori"],
+						"availableIn": ["India","New Zealand"]
+					},
+					{	"name": "Maori",
+						"points": 2,
+						"perModel": true,
+						"availableIn": ["New Zealand"],
+						"unlockedByLocal": ["Veterancy - Veteran","Veterancy - Regular"],
+						"chooseOneKey": "natRuNZ"
 					}
 				],
 				"keywords": ["Period: E|M","Green"],
@@ -21076,6 +21147,27 @@
 					{	"name": "Anti-Tank Grenades",
 						"points": 2,
 						"perModel": true
+					},
+					{	"name": "Discounted SMGs",
+						"points": -1,
+						"increment": true,
+						"max": 1,
+						"unlockedByLocal": ["Maori"],
+						"availableIn": ["New Zealand"]
+					},
+					{	"name": "Discounted Shotguns",
+						"points": -1,
+						"increment": true,
+						"max": 5,
+						"unlockedByLocal": ["Maori"],
+						"availableIn": ["New Zealand"]
+					},
+					{	"name": "Maori",
+						"points": 2,
+						"perModel": true,
+						"availableIn": ["New Zealand"],
+						"unlockedByLocal": ["Veterancy - Veteran","Veterancy - Regular"],
+						"chooseOneKey": "natRuNZ"
 					}
 				],
 				"keywords": ["Period: E|M","Green","Infiltrator"],
@@ -21264,7 +21356,7 @@
 					{	"name": "Discounted SMGs",
 						"points": -1,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"unlockedByLocal": ["Ayo Gurkhali!","Maori"],
 						"availableIn": ["India","New Zealand"]
 					},
@@ -21637,7 +21729,7 @@
 					{	"name": "Discounted SMGs",
 						"points": -1,
 						"increment": true,
-						"max": "parentModels",
+						"max": 1,
 						"unlockedByLocal": ["Ayo Gurkhali!","Maori"],
 						"availableIn": ["India","New Zealand"]
 					},
@@ -21796,10 +21888,11 @@
 						"max": 5,
 						"addsModels": 1
 					},
-					{	"name": "SMG",
+					{	"name": "SMGs",
 						"points": 4,
 						"max": "parentModels",
 						"maxKey": "gun",
+						"increment": true,
 						"localLimit": 5
 					},
 					{	"name": "LMG",
@@ -22132,10 +22225,11 @@
 						"perModel": true,
 						"requireChooseOneKey": "NCOVeterancy"
 					},
-					{	"name": "SMG",
+					{	"name": "SMGs",
 						"points": 4,
 						"max": "parentModels",
 						"maxKey": "gun",
+						"increment": true,
 						"localLimit": 5
 					},
 					{	"name": "LMG",
@@ -30232,6 +30326,222 @@
 				"specialText": "Tow: Any",
 				"equipment": ["Damage Value: 6+"]
 			},
+			{	"name": "Daihatsu-Class Landing Craft",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 6,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 36,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 9,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 18,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Slow","Waterborne"],
+				"allWar": true,
+				"dv6": true,
+				"specialText": "Transport: 70 OR 1 Armored Vehicle of DV 8+ or Less and 36 men",
+				"equipment": ["Damage Value: 6+","Pintle Mounted HMG"]
+			},
+			{	"name": "Toku Daihatsu-Class Landing Craft",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 7,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 64,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 16,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 32,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Open Topped","Slow","Waterborne"],
+				"allWar": true,
+				"dv7": true,
+				"specialText": "Transport: 100 OR 2 Armored Vehicles of DV 8+ or Less OR 1 Armored Vehicle of DV 8+ and 50 men",
+				"equipment": ["Damage Value: 7+","Pintle Mounted HMG"]
+			},
+			{	"name": "Toku Daihatsu-Class Landing Craft - LAC",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 7,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "Japan" }]			
+					},
+					{"all": [{ "in": "Rifle Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Engineer Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Artillery Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 64,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 16,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 32,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Open Topped","Slow","Waterborne"],
+				"allWar": true,
+				"dv7": true,
+				"specialText": "Transport: 100 OR 2 Armored Vehicles of DV 8+ or Less OR 1 Armored Vehicle of DV 8+ and 50 men",
+				"equipment": ["Damage Value: 7+","Platform Mounted Light Autocannon"]
+			},
+			{	"name": "Recce Daihatsu-Class Landing Craft",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 6,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 46,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 9,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 18,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Slow","Waterborne","Recce"],
+				"allWar": true,
+				"dv6": true,
+				"specialText": "Transport: 70 OR 1 Armored Vehicle of DV 8+ or Less and 36 men",
+				"equipment": ["Damage Value: 6+","Pintle Mounted HMG"]
+			},
+			{	"name": "Recce Toku Daihatsu-Class Landing Craft",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 7,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 74,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 16,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 32,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Open Topped","Slow","Waterborne","Recce"],
+				"allWar": true,
+				"dv7": true,
+				"specialText": "Transport: 100 OR 2 Armored Vehicles of DV 8+ or Less OR 1 Armored Vehicle of DV 8+ and 50 men",
+				"equipment": ["Damage Value: 7+","Pintle Mounted HMG"]
+			},
+			{	"name": "Recce Toku Daihatsu-Class Landing Craft - LAC",
+				"advancemove": 6,
+				"morale": 8,
+				"damagevalue": 7,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{"all": [{ "in": "Recce Platoon"	}, { "in": "Japan" }]}
+				],
+				"points": 74,
+				"models": 1,
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 16,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 32,
+						"requireChooseOneKey": "NCOVeterancy"
+					}
+				],
+				"transport": 70,
+				"keywords": ["Period: E|M|L","Transport","Landing Craft","Open Topped","Slow","Waterborne","Recce"],
+				"allWar": true,
+				"dv7": true,
+				"specialText": "Transport: 100 OR 2 Armored Vehicles of DV 8+ or Less OR 1 Armored Vehicle of DV 8+ and 50 men",
+				"equipment": ["Damage Value: 7+","Platform Mounted Light Autocannon"]
+			},
 			{	"name": "Recce General Purpose Truck",
 				"advancemove": 9,
 				"morale": 8,
@@ -36904,7 +37214,7 @@
 					{"all": [{ "in": "Artillery Platoon" }, { "in": "Italy" }]},
 					{"all": [{ "in": "Artillery Platoon" }, { "in": "Italian National Republican Army" }]}
 				],
-				"points": 54,
+				"points": 59,
 				"models": 3,
 				"sortPriority": 4,
 				"limits": [
@@ -37022,7 +37332,7 @@
 					{"all": [{ "in": "Artillery Platoon" }, { "in": "Hungary" }]},
 					{"all": [{ "in": "Artillery Platoon" }, { "in": "Romania" }]}
 				],
-				"points": 54,
+				"points": 59,
 				"models": 3,
 				"sortPriority": 10,
 				"limits": [
@@ -38429,7 +38739,7 @@
 				"specialText": "4 Crew Members",
 				"equipment": ["Light Howitzer Team"]
 			},
-			{	"name": "20mm Twin AA Gun Mk 4",
+			{	"name": "Twin 20mm AA Gun Mk 4",
 				"morale": 8,
 				"damagevalue": 3,
 				"tohit": 4,
@@ -39155,7 +39465,7 @@
 						"requireChooseOneKey": "capturedVehicles"
 					}
 				],
-				"keywords": ["Period: M|L","Heavy Charge", "Remote Controlled"],
+				"keywords": ["Period: M|L","Heavy Charge", "Remote Controlled","Auxiliary"],
 				"midLateWar": true,
 				"dv7": true,
 				"equipment": ["Damage Value: 7+","Vehicle Veterancy - Inexperienced"]
@@ -40900,7 +41210,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Germany" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]}
 				],
-				"points": 88,
+				"points": 84,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -40916,12 +41226,12 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 22,
+						"points": 21,
 						"availableIn": ["Germany" ],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 44,
+						"points": 42,
 						"availableIn": ["Germany" ],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
@@ -40934,7 +41244,7 @@
 				"keywords": ["Period: E|M|L","One Man Turret","Slow","Armored All Round"],
 				"allWar": true,
 				"dv8": true,
-				"equipment": ["Hull Mounted MMG","Damage Value: 8+","Turret Mounted Low Velocity Light AT Gun"]
+				"equipment": ["Turret Mounted Coaxial MMG","Damage Value: 8+","Turret Mounted Low Velocity Light AT Gun"]
 			},
 			{	"name": "Panzer 40R 731(F) Light Tank",
 				"advancemove": 6,
@@ -48450,7 +48760,7 @@
 					}
 				],
 				"options": [],
-				"keywords": ["Period: M|L","Heavy Charge", "Remote Controlled"],
+				"keywords": ["Period: M|L","Heavy Charge", "Remote Controlled","Auxiliary"],
 				"midLateWar": true,
 				"dv7": true,
 				"equipment": ["Damage Value: 7+","Vehicle Veterancy - Inexperienced"]
@@ -49863,7 +50173,7 @@
 					{"all": [{ "in": "Armored Platoon" }, { "in": "Romania" }]},
 					{"all": [{ "in": "Armored Platoon" }, { "in": "Hungary" }]}
 				],
-				"points": 88,
+				"points": 84,
 				"models": 1,
 				"sortPriority": 10,
 				"limits": [
@@ -49884,14 +50194,14 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 22,
+						"points": 21,
 						"requireChooseOneKey": "NCOVeterancy"
 					}
 				],
 				"keywords": ["Period: E|M|L","One Man Turret","Slow","Armored All Round"],
 				"allWar": true,
 				"dv8": true,
-				"equipment": ["Hull Mounted MMG","Damage Value: 8+","Turret Mounted Low Velocity Light AT Gun"]
+				"equipment": ["Turret Mounted Coaxial MMG","Damage Value: 8+","Turret Mounted Low Velocity Light AT Gun"]
 			},
 			{	"name": "AXIS SUPPORT - Panzer 40R 731(F) Light Tank",
 				"advancemove": 6,
@@ -60660,10 +60970,12 @@
 				"availableIn": [
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Great Britain" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Union" }]},
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "Australia" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "East Africa Command" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "India" }]},
-					{"all": [{ "in": "Armored Platoon"	}, { "in": "New Zealand" }]}
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "New Zealand" }]},
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "South Africa" }]}
 				],
 				"points": 180,
 				"models": 1,
@@ -60682,7 +60994,7 @@
 					},
 					{	"name": "Vehicle Veterancy - Regular",
 						"points": 45,
-						"availableIn": ["Great Britain","Soviet Union","East Africa Command","India","New Zealand" ],
+						"availableIn": ["Great Britain","Soviet Union","East Africa Command","India","New Zealand","Australia","South Africa" ],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{
@@ -60694,7 +61006,7 @@
 					{
 						"name": "Pintle Mounted MMG",
 						"points": 10,
-						"availableIn": ["Great Britain","East Africa Command","India","New Zealand"]
+						"availableIn": ["Great Britain","East Africa Command","India","New Zealand","Australia","South Africa"]
 					}
 				],
 				"keywords": ["Period: E|M","Vulnerable","Easily Catches Fire"],
@@ -60821,6 +61133,7 @@
 				"availableIn": [
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "United States" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]},
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "Australia" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "East Africa Command" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "India" }]}
 				],
@@ -60841,12 +61154,12 @@
 					},
 					{	"name": "Vehicle Veterancy - Regular",
 						"points": 48,
-						"availableIn": ["United States","East Africa Command","India" ],
+						"availableIn": ["United States","East Africa Command","India","Australia" ],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
 						"points": 96,
-						"availableIn": ["United States","East Africa Command","India" ],
+						"availableIn": ["United States","East Africa Command","India","Australia" ],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{
@@ -61005,6 +61318,11 @@
 						"points": 40,
 						"availableIn": ["Partisans","United States"],
 						"chooseOneKey": "secWeapon"
+					},
+					{
+						"name": "Two Hull Mounted LMGs",
+						"points": 15,
+						"availableIn": ["Partisans","Soviet Union"]
 					},
 					{
 						"name": "Pintle Mounted MMG",
@@ -68664,7 +68982,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Canada" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]}
 				],
-				"points": 158,
+				"points": 126,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -68680,12 +68998,12 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 40,
+						"points": 32,
 						"availableIn": ["Great Britain","Canada"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 80,
+						"points": 64,
 						"availableIn": ["Great Britain","Canada"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
@@ -71911,7 +72229,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "India" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Italian Co-Belligerent Army" }]}
 				],
-				"points": 180,
+				"points": 220,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -71950,7 +72268,7 @@
 				"keywords": ["Period: E|M|L","Slow"],
 				"allWar": true,
 				"dv10": true,
-				"equipment": ["Turret Mounted Coaxial MMG","Damage Value: 10+","Turret Mounted Light Howitzer","Hull Mounted MMG"]
+				"equipment": ["Turret Mounted Coaxial MMG","Damage Value: 10+","Turret Mounted Medium Howitzer","Hull Mounted MMG"]
 			},
 			{	"name": "A22 'Churchill VI' Mk.VI Heavy Tank",
 				"advancemove": 6,
@@ -72069,7 +72387,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Great Britain" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Canada" }]}
 				],
-				"points": 265,
+				"points": 305,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -72108,7 +72426,7 @@
 				"keywords": ["Period: L","Slow"],
 				"lateWar": true,
 				"dv10": true,
-				"equipment": ["Turret Mounted Coaxial MMG","Hull Mounted MMG","Damage Value: 11+","Turret Mounted Light Howitzer"]
+				"equipment": ["Turret Mounted Coaxial MMG","Hull Mounted MMG","Damage Value: 11+","Turret Mounted Medium Howitzer"]
 			},
 			{	"name": "Lanchester 6x4 Armoured Car",
 				"advancemove": 9,
@@ -72158,7 +72476,7 @@
 				"keywords": ["Period: E","Wheel","Recce"],
 				"earlyWar": true,
 				"dv7": true,
-				"equipment": ["Turret Mounted MMG","Turret Mounted HMG","Hull Mounted MMG","Damage Value: 7+"]
+				"equipment": ["Turret Mounted HMG w/ Linked MMG","Hull Mounted MMG","Damage Value: 7+"]
 			},
 			{	"name": "Lanchester 6x4 Armoured Command Car",
 				"advancemove": 9,
@@ -72209,7 +72527,7 @@
 				"keywords": ["Period: E","Wheel","Recce","Command Vehicle"],
 				"earlyWar": true,
 				"dv7": true,
-				"equipment": ["Turret Mounted MMG","Turret Mounted HMG","Damage Value: 7+"]
+				"equipment": ["Turret Mounted HMG w/ Linked MMG","Damage Value: 7+"]
 			},
 			{	"name": "Light Tank Mk. II-VI B",
 				"advancemove": 9,
@@ -72227,7 +72545,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "New Zealand" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "South Africa" }]}
 				],
-				"points": 56,
+				"points": 62,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -72243,7 +72561,12 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 14,
+						"points": 16,
+						"availableIn": ["Great Britain","Australia","East Africa Command","India","New Zealand","South Africa"],
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Veteran",
+						"points": 32,
 						"availableIn": ["Great Britain","Australia","East Africa Command","India","New Zealand","South Africa"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
@@ -72257,7 +72580,7 @@
 				"keywords": ["Period: E|M"],
 				"earlyMidWar": true,
 				"dv7": true,
-				"equipment": ["Turret Mounted HMG","Turret Mounted Coaxial MMG","Damage Value: 7+"]
+				"equipment": ["Turret Mounted HMG w/ Linked MMG","Damage Value: 7+"]
 			},
 			{	"name": "Light Tank Mk. VI C",
 				"advancemove": 9,
@@ -72731,7 +73054,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Great Britain" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]}
 				],
-				"points": 92,
+				"points": 84,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -72747,12 +73070,12 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 23,
+						"points": 21,
 						"availableIn": ["Great Britain"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 46,
+						"points": 42,
 						"availableIn": ["Great Britain"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
@@ -72773,7 +73096,6 @@
 				"equipment": [
 					"Turret Mounted Light AT Gun",
 					"Turret Mounted Coaxial MMG",
-					"Hull Mounted MMG",
 					"Damage Value: 7+"
 				]
 			},
@@ -72846,7 +73168,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "India" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "New Zealand" }]}
 				],
-				"points": 108,
+				"points": 100,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -72862,14 +73184,18 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 27,
+						"points": 25,
 						"availableIn": ["Great Britain","Australia","East Africa Command","India","New Zealand"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 54,
+						"points": 50,
 						"availableIn": ["Great Britain","Australia","East Africa Command","India","New Zealand"],
 						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{
+						"name": "Two Hull Mounted LMGs",
+						"points": 15
 					},
 					{
 						"name": "Unreliable",
@@ -72884,7 +73210,7 @@
 				"equipment": [
 					"Turret Mounted Coaxial MMG",
 					"Turret Mounted Light AT Gun",
-					"Hull Mounted Twin MMG",
+					"Hull Mounted MMG",
 					"Damage Value: 8+"
 				]
 			},
@@ -72902,7 +73228,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "India" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "New Zealand" }]}
 				],
-				"points": 78,
+				"points": 70,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -72918,14 +73244,18 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 27,
+						"points": 25,
 						"availableIn": ["Great Britain","East Africa Command","India","New Zealand"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 54,
+						"points": 50,
 						"availableIn": ["Great Britain","East Africa Command","India","New Zealand"],
 						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{
+						"name": "Two Hull Mounted LMGs",
+						"points": 15
 					},
 					{
 						"name": "Unreliable",
@@ -76357,6 +76687,13 @@
 					{"all": [{ "in": "Artillery Platoon"	}, { "in": "Canada" }]},
 					{"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "Canada" }]},
 					{
+						"all": [{ "in": "HQ Platoon"	}, { "in": "India" }]			
+					},
+					{"all": [{ "in": "Rifle Platoon"	}, { "in": "India" }]},
+					{"all": [{ "in": "Engineer Platoon"	}, { "in": "India" }]},
+					{"all": [{ "in": "Artillery Platoon"	}, { "in": "India" }]},
+					{"all": [{ "in": "Heavy Weapons Platoon"	}, { "in": "India" }]},
+					{
 						"all": [{ "in": "HQ Platoon"	}, { "in": "New Zealand" }]			
 					},
 					{"all": [{ "in": "Rifle Platoon"	}, { "in": "New Zealand" }]},
@@ -76413,6 +76750,7 @@
 				"availableIn": [
 					{"all": [{ "in": "Recce Platoon"	}, { "in": "Great Britain" }]},
 					{"all": [{ "in": "Recce Platoon"	}, { "in": "Canada" }]},
+					{"all": [{ "in": "Recce Platoon"	}, { "in": "India" }]},
 					{"all": [{ "in": "Recce Platoon"	}, { "in": "New Zealand" }]},
 					{"all": [{ "in": "Recce Platoon"	}, { "in": "Canada" }]}
 				],
@@ -77493,7 +77831,7 @@
 						"localLimit": 1
 					},
 					{	"name": "Horses",
-						"points": 3,
+						"points": 4,
 						"perModel": true
 					},
 					{	"name": "Panzerfaust",
@@ -78371,7 +78709,7 @@
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Union" }]},
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]}
 				],
-				"points": 56,
+				"points": 62,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -78387,12 +78725,12 @@
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Regular",
-						"points": 14,
+						"points": 16,
 						"availableIn": ["Soviet Union"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
 					{	"name": "Vehicle Veterancy - Veteran",
-						"points": 28,
+						"points": 32,
 						"availableIn": ["Soviet Union"],
 						"requireChooseOneKey": "NCOVeterancy"
 					},
@@ -78406,7 +78744,7 @@
 				"keywords": ["Period: E|M","Amphibious"],
 				"earlyMidWar": true,
 				"dv7": true,
-				"equipment": ["Turret Mounted Coaxial MMG","Turret Mounted HMG","Damage Value: 7+"]
+				"equipment": ["Turret Mounted HMG w/ Linked MMG","Damage Value: 7+"]
 			},
 			{	"name": "T-50 Light Tank",
 				"advancemove": 9,
@@ -79001,7 +79339,7 @@
 				"availableIn": [
 					{"all": [{ "in": "Armored Platoon"	}, { "in": "Soviet Union" }]}
 				],
-				"points": 236,
+				"points": 226,
 				"models": 1,
 				"sortPriority": 3,
 				"limits": [
@@ -79023,6 +79361,9 @@
 					{	"name": "Vehicle Veterancy - Veteran",
 						"points": 118,
 						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Hull Mounted MMG",
+						"points": 10
 					}
 				],
 				"keywords": ["Period: M|L"],
@@ -79032,7 +79373,6 @@
 					"Turret Mounted Heavy AT Gun",
 					"Turret Mounted Coaxial MMG",
 					"Turret Mounted Rear Facing MMG",
-					"Hull Mounted MMG",
 					"Damage Value: 10+"
 				]
 			},
@@ -79163,6 +79503,10 @@
 						"points": 0,
 						"availableIn": ["Partisans"],
 						"requireChooseOneKey": "capturedVehicles"
+					},
+					{
+						"name": "Improved Ballistics",
+						"points": 15
 					}
 				],
 				"keywords": ["Period: E","Open Topped"],
@@ -79209,6 +79553,10 @@
 						"points": 0,
 						"availableIn": ["Partisans"],
 						"requireChooseOneKey": "capturedVehicles"
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"points": 33
 					}
 				],
 				"keywords": ["Period: M|L"],
@@ -79255,6 +79603,10 @@
 						"points": 0,
 						"availableIn": ["Partisans"],
 						"requireChooseOneKey": "capturedVehicles"
+					},
+					{
+						"name": "Reinforced Front Armor",
+						"points": 33
 					}
 				],
 				"keywords": ["Period: L"],
@@ -81181,7 +81533,7 @@
 					"Damage Value: 9+"
 				]
 			},
-			{	"name": "Type 2 Ka-Mi Light Amphibious Tank",
+			{	"name": "Type 2 Ka-Mi Light Amphibious Tank - LVLAT",
 				"advancemove": 9,
 				"morale": 8,
 				"damagevalue": 7,
@@ -81217,13 +81569,69 @@
 						"points": 0,
 						"availableIn": ["Partisans"],
 						"requireChooseOneKey": "capturedVehicles"
+					},
+					{
+						"name": "One Man Turret",
+						"points": -10
 					}
 				],
-				"keywords": ["Period: M|L","Amphibious","One Man Turret"],
+				"keywords": ["Period: M|L","Amphibious"],
 				"midLateWar":true,
 				"dv7": true,
 				"equipment": [
 					"Turret Mounted Low Velocity Light AT Gun", 
+					"Turret Mounted Coaxial MMG",
+					"Hull Mounted MMG",
+					"Damage Value: 7+"
+				]
+			},
+			{	"name": "Type 2 Ka-Mi Light Amphibious Tank - LAT",
+				"advancemove": 9,
+				"morale": 8,
+				"damagevalue": 7,
+				"tohit": 4,
+				"factions": [],
+				"order": 1,
+				"availableIn": [
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "Japan" }]},
+					{"all": [{ "in": "Armored Platoon"	}, { "in": "Partisans" }]}
+				],
+				"points": 86,
+				"models": 1,
+				"sortPriority": 3,
+				"limits": [
+					{
+						"key": "Tanks",
+						"limit": 5,
+						"perParent": true
+					}
+				],
+				"options": [
+					{	"name": "Vehicle Veterancy - Inexperienced",
+						"points": 0,
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{	"name": "Vehicle Veterancy - Regular",
+						"points": 19,
+						"availableIn": ["Japan"],
+						"requireChooseOneKey": "NCOVeterancy"
+					},
+					{
+						"name": "Unreliable",
+						"points": 0,
+						"availableIn": ["Partisans"],
+						"requireChooseOneKey": "capturedVehicles"
+					},
+					{
+						"name": "One Man Turret",
+						"points": -10
+					}
+				],
+				"keywords": ["Period: M|L","Amphibious"],
+				"midLateWar":true,
+				"dv7": true,
+				"equipment": [
+					"Turret Mounted Light AT Gun", 
 					"Turret Mounted Coaxial MMG",
 					"Hull Mounted MMG",
 					"Damage Value: 7+"
